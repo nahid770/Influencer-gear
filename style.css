@@ -49,6 +49,7 @@ main{
     margin-bottom: 16px;
 }
 .banner-text p{
+
     margin-bottom: 20px;
   
 }
@@ -71,14 +72,28 @@ padding: 10px 15px;
 /* ---------Populer collection section start---------- */
 
 
+.popular-section{
+   display:grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+align-items: center;
 
-/* .popular-section{
-    margin-bottom: 100px;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   
-} */
+   width: 1100px;
+   margin: 0 auto;
+    
+    grid-row-gap: 20px;
+    margin-bottom: 150px;
+ 
+  
+    
+}
+.heading-text{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
 .item-thumbnail{
     width: 300px;
     height: 256px;
@@ -111,4 +126,20 @@ color: #787885;
 position: relative;
 top: 15px;
 }
+
+.link-button2{
+    text-decoration: none;
+color: #E02C6D;
+font-weight: 500;
+
+justify-content:flex-end;
+}
+
+.popular-section .link-button2{
+    position: relative;
+   left: 970px;
+}
+
+
+
 /* ---------Populer collection section end---------- */
