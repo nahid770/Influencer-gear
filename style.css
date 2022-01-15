@@ -78,12 +78,13 @@ padding: 10px 15px;
 
 .popular-section{
    display:grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3, 400px );
 justify-content: center;
 align-items: center;
 
-   width: 1100px;
-   margin: 0 auto;
+
+   /* width: 1100px;
+   margin: 0 auto; */
     
     grid-row-gap: 20px;
     margin-bottom: 150px;
@@ -133,16 +134,13 @@ top: 15px;
 
 .link-button2{
     text-decoration: none;
-color: #E02C6D;
-font-weight: 500;
-
-justify-content:flex-end;
-}
-
-.popular-section .link-button2{
+    color: #E02C6D;
+    font-weight: 500;
     position: relative;
-   left: 970px;
-}
+    left: 1035px;
+    justify-content: flex-end;
+    
+    }
 
 
 
@@ -200,4 +198,126 @@ font-size: 13px;
 .style{
     margin: 0 10px;
     padding-top: 10px;
+}
+/* --------------------------
+Responsive style started
+------------------------------ */
+
+/* Mobile responsive */
+
+@media (max-width:576px) {
+
+    .navigation{
+        display: flex;
+        flex-direction:row; 
+         justify-content: space-between;
+        
+    }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+.banner-text h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 34px;
+}
+.banner-text p{
+    text-align: center;
+    font-size: 13px;
+    padding: 0 15px;
+}
+.link-button{
+   position: relative;
+   left: 70px;
+} 
+.banner-img{
+   /* height: 220px;
+   width: 200px; */
+   margin-top: 50px;
+   /* margin-bottom: 50px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+.banner-img:hover{
+    transform: scale(1.3);
+    transition: transform 3s;
+}
+.heading-text{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.popular-section{
+   
+    grid-template-columns: repeat(1, 350px );
+    margin-bottom: 50px;
+     
+ }
+
+ .link-button2{
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: 500;
+  
+    
+    }
+.section-style{
+    margin-bottom: 40px;
+}
+
+
+
+
+.login-container{
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Tab  responsive */
+@media (min-width:768px){
+
+    .navigation{
+        display: flex;
+        flex-direction:row; 
+         justify-content: space-between;
+        
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+
+}
+.banner-img{
+    
+ 
+ 
+    flex-direction: column;
+   
+   
+ }
+.banner-text h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.banner-text p{
+    text-align: center;
+    font-size: 13px;
+    padding: 0 15px;
+}
+
+}
+
 }
