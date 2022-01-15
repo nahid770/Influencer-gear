@@ -53,6 +53,10 @@ main{
     margin-bottom: 20px;
   
 }
+.banner-img:hover{
+    transform: scale(1.3);
+    transition: transform 3s;
+}
 .link-button{
 text-decoration: none;
 color: white;
